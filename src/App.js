@@ -2,6 +2,7 @@ import { Route} from 'react-router-dom';
 
 import './App.css';
 import MainHeader from './components/MainHeader';
+import ProductDetails from './pages/ProductDetails';
 import Products from './pages/Products';
 import Welcome from './pages/Welcome';
 
@@ -11,11 +12,14 @@ function App() {
     <div className="App">
       <MainHeader />
         <main>
-          <Route path='/Welcome'>
+          <Route path='/welcome'>
               <Welcome />
           </Route>
-          <Route path='/Products'>
+          <Route path='/products'>
               <Products />
+          </Route>
+          <Route path='/product-details/:productId'>
+              <ProductDetails />
           </Route>
         </main>
         

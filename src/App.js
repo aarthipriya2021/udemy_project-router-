@@ -2,8 +2,8 @@ import { Route} from 'react-router-dom';
 
 import './App.css';
 import MainHeader from './components/MainHeader';
-import Products from './components/pages/Products';
-import Welcome from './components/pages/Welcome';
+import Products from './pages/Products';
+import Welcome from './pages/Welcome';
 
 
 function App() {
